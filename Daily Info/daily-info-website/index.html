@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Info — Новини онлайн</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🧭 ШАПКА -->
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">Daily Info</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="politics.html">Політика</a></li>
+          <li><a href="economy.html">Економіка</a></li>
+          <li><a href="sport.html">Спорт</a></li>
+          <li><a href="tech.html">Технології</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+      <!-- 🔍 ПОШУК -->
+      <form class="search-form" action="#" method="get">
+        <label for="site-search" class="visually-hidden">Пошук по сайту</label>
+        <input type="search" id="site-search" name="q" placeholder="Пошук новин..." />
+        <button type="submit">🔍</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- 🖼️ ГОЛОВНА НОВИНА -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <img src="https://www.donbasssos.org/wp-content/uploads/2019/11/zakon211-678x381.jpg" alt="Головна новина" class="hero-img" />
+      <div class="hero-text">
+        <h2>Новий законопроєкт змінює правила оподаткування</h2>
+        <p>Сьогодні Верховна Рада розглянула важливий законопроєкт, який може змінити правила оподаткування малого бізнесу. Експерти очікують серйозних економічних наслідків.</p>
+        <a href="#" class="read-more">Читати далі</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🗞️ СТРІЧКА НОВИН -->
+  <section class="news-feed">
+    <div class="container">
+      <h2>Останні новини</h2>
+      <div class="news-grid">
+
+        <article class="news-item">
+          <img src="https://www.president.gov.ua/storage/j-image-storage/25/65/25/3547073722e43da8d4fde95023a641f9_1656498573_extra_large.jpeg" alt="Новина 1" />
+          <h3>Президент виступив із промовою</h3>
+          <p>Сьогодні Президент України виступив із важливою промовою щодо міжнародної політики.</p>
+          <a href="#" class="read-more">Читати далі</a>
+        </article>
+
+        <article class="news-item">
+          <img src="https://static.ukrinform.com/photos/2017_05/thumb_files/630_360_1494939410-3784.jpg" alt="Новина 2" />
+          <h3>Економіка зростає на 3%</h3>
+          <p>Міністерство фінансів опублікувало нові дані про зростання економіки України.</p>
+          <a href="#" class="read-more">Читати далі</a>
+        </article>
+
+        <article class="news-item">
+          <img src="https://prosportua.com/storage/komanda-alb-ukr-1-11-24-min-1732053032y8io8.jpg" alt="Новина 3" />
+          <h3>Українська збірна перемогла у фіналі</h3>
+          <p>Національна збірна з футболу здобула перемогу з рахунком 2:1.</p>
+          <a href="#" class="read-more">Читати далі</a>
+        </article>
+
+        <article class="news-item">
+          <img src="https://medstar.ua/wp-content/uploads/2021/07/freudenberg-minnet-0140-1024x538.jpg" alt="Новина 4" />
+          <h3>Нові технології в медицині</h3>
+          <p>У Києві відкрили новий медичний центр з інноваційним обладнанням.</p>
+          <a href="#" class="read-more">Читати далі</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 📑 КАТЕГОРІЇ -->
+  <section class="categories">
+    <div class="container">
+      <h2>Популярні категорії</h2>
+      <div class="category-list">
+        <a href="#politics" class="category">Політика</a>
+        <a href="#economy" class="category">Економіка</a>
+        <a href="#sport" class="category">Спорт</a>
+        <a href="#tech" class="category">Технології</a>
+        <a href="#culture" class="category">Культура</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📨 ПІДПИСКА -->
+  <section class="subscribe">
+    <div class="container">
+      <h2>Підпишіться на розсилку</h2>
+      <p>Отримуйте найсвіжіші новини щодня на ваш email.</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="Введіть ваш email" required />
+        <button type="submit">Підписатися</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 📞 КОНТАКТИ -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2>Контакти</h2>
+      <p><strong>Адреса:</strong> м. Київ, вул. Новинна, 1</p>
+      <p><strong>Телефон:</strong> +38 (067) 123-45-67</p>
+      <p><strong>Email:</strong> info@dailyinfo.ua</p>
+    </div>
+  </section>
+
+  <!-- 📢 ФУТЕР -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Daily Info — всі права захищено.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

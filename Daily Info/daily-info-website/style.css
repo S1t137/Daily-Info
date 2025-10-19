@@ -1,0 +1,168 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h1.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Search form styles */
+.search-form {
+  display: flex;
+}
+
+.search-form input[type="search"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-form button {
+  background: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  margin: 20px 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+/* News feed styles */
+.news-feed {
+  margin: 20px 0;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-item {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Categories styles */
+.categories {
+  margin: 20px 0;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Subscribe section styles */
+.subscribe {
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Contacts section styles */
+.contacts {
+  margin: 20px 0;
+}
+
+/* Footer styles */
+footer {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
