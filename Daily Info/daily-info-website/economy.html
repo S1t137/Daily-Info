@@ -1,79 +1,185 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Info — Економіка</title>
-  <link rel="stylesheet" href="Daily Info/daily-info-website/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Економіка — Daily Info</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f6ff;
+    }
+
+    header {
+      background: #30ba02;
+      color: #fff;
+      padding: 15px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    .news-feed {
+      padding: 40px 0;
+    }
+
+    .news-feed h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00224d;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-card-content {
+      padding: 15px;
+    }
+
+    .news-card h3 {
+      margin: 0 0 10px;
+      color: #003366;
+    }
+
+    .news-card p {
+      color: #444;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003366;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+<header>
+  <div class="container header-content">
+    <h1 class="logo">Daily Info</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="politics.html">Політика</a></li>
+        <li><a href="economy.html" class="active">Економіка</a></li>
+        <li><a href="sport.html">Спорт</a></li>
+        <li><a href="tech.html">Технології</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- 🧭 ШАПКА -->
-  <header>
-    <div class="container header-content">
-      <h1 class="logo">Daily Info</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a href="politics.html">Політика</a></li>
-          <li><a href="economy.html">Економіка</a></li>
-          <li><a href="sport.html">Спорт</a></li>
-          <li><a href="tech.html">Технології</a></li>
-          <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-      </nav>
-      <!-- 🔍 ПОШУК -->
-      <form class="search-form" action="#" method="get">
-        <label for="site-search" class="visually-hidden">Пошук по сайту</label>
-        <input type="search" id="site-search" name="q" placeholder="Пошук новин..." />
-        <button type="submit">🔍</button>
-      </form>
+<section class="news-feed">
+  <div class="container">
+    <h2>Економічні новини</h2>
+
+    <div class="news-grid">
+
+      <div class="news-card">
+        <img src="https://uspp.ua/ru/assets/image-cache/images/img-2023/vvp.298d7bc0.jpg" alt="Зростання ВВП">
+        <div class="news-card-content">
+          <h3>Українська економіка показала зростання ВВП на 4,2%</h3>
+          <p>За підсумками третього кварталу 2025 року українська економіка продемонструвала стабільне зростання. Головними драйверами стали аграрний сектор і сфера IT.</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://ukrainaincognita.com/wp-content/uploads/files/u3/nb_n_13.jpg" alt="Курс гривні">
+        <div class="news-card-content">
+          <h3>Нацбанк стабілізував курс гривні</h3>
+          <p>Завдяки валютним інтервенціям та відновленню експорту гривня зміцнилася до рівня 37 грн/долар. Експерти очікують стабільності на валютному ринку до кінця року.</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://www.csi.org.ua/wp-content/uploads/2023/10/kartynka.jpg" alt="Інвестиції">
+        <div class="news-card-content">
+          <h3>Україна залучила нові інвестиції у відновлювану енергетику</h3>
+          <p>Міжнародні компанії інвестують понад 1,5 млрд доларів у розвиток сонячних і вітрових станцій, що створить понад 10 тисяч нових робочих місць.</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://ia.ua/wp-content/uploads/2018/07/%D0%A3%D1%81%D0%BB%D1%83%D0%B3%D0%B8.-IT-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8-min.jpg" alt="ІТ-галузь">
+        <div class="news-card-content">
+          <h3>IT-галузь України продовжує зростати попри виклики</h3>
+          <p>Українські компанії нарощують експорт IT-послуг. Загальний обсяг доходів сектору перевищив 9 млрд доларів, що є історичним максимумом.</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://agronews.ua/wp-content/uploads/2024/10/2-16-623x370.jpg" alt="Аграрний сектор">
+        <div class="news-card-content">
+          <h3>Аграрний сектор показав рекордний врожай зернових</h3>
+          <p>Україна експортувала понад 45 млн тонн зерна. Сприятливі погодні умови та сучасні технології допомогли досягти найкращих показників за останні роки.</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="https://fintechinsider.com.ua/wp-content/uploads/2022/12/fintech_ukraine-scaled.jpg" alt="Фінтех">
+        <div class="news-card-content">
+          <h3>Український фінтех виходить на європейський ринок</h3>
+          <p>Кілька стартапів отримали ліцензії на роботу у країнах ЄС. Це відкриває нові можливості для розвитку цифрових банківських сервісів та мобільних платежів.</p>
+        </div>
+      </div>
+
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- 📰 НОВИНИ ЕКОНОМІКИ -->
-  <section class="economy-news">
-    <div class="container">
-      <h2>Останні новини економіки</h2>
-      <article class="news-item">
-        <img src="https://example.com/economy-news1.jpg" alt="Економічна новина 1" />
-        <h3>Економіка України: нові виклики та можливості</h3>
-        <p>В Україні спостерігається зростання інвестицій у різні сектори економіки, що відкриває нові можливості для бізнесу.</p>
-        <a href="#" class="read-more">Читати далі</a>
-      </article>
-
-      <article class="news-item">
-        <img src="https://example.com/economy-news2.jpg" alt="Економічна новина 2" />
-        <h3>Зміни в податковій політиці</h3>
-        <p>Уряд анонсував зміни в податковій політиці, які можуть вплинути на малий та середній бізнес.</p>
-        <a href="#" class="read-more">Читати далі</a>
-      </article>
-
-      <article class="news-item">
-        <img src="https://example.com/economy-news3.jpg" alt="Економічна новина 3" />
-        <h3>Прогноз зростання ВВП на 2025 рік</h3>
-        <p>Експерти прогнозують зростання ВВП України на 4% у 2025 році, що свідчить про позитивні тенденції в економіці.</p>
-        <a href="#" class="read-more">Читати далі</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- 📞 КОНТАКТИ -->
-  <section class="contacts" id="contacts">
-    <div class="container">
-      <h2>Контакти</h2>
-      <p><strong>Адреса:</strong> м. Київ, вул. Новинна, 1</p>
-      <p><strong>Телефон:</strong> +38 (067) 123-45-67</p>
-      <p><strong>Email:</strong> info@dailyinfo.ua</p>
-    </div>
-  </section>
-
-  <!-- 📢 ФУТЕР -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Daily Info — всі права захищено.</p>
-    </div>
-  </footer>
+<footer>
+  <p>&copy; 2025 Daily Info</p>
+</footer>
 
 </body>
 </html>

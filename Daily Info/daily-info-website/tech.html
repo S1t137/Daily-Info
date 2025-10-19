@@ -1,11 +1,170 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Info — Технології</title>
-  <link rel="stylesheet" href="Daily Info/daily-info-website/style.css" />
-</head>
+    <meta charset="UTF-8">
+    <title>Daily Info</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;      
+    }
+    header {
+      background: #1100ff;
+      color: #fff;
+      padding: 15px 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .logo {
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a.active {
+      text-decoration: underline;
+    }
+    .search-form {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .search-form input[type="search"] {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+    }
+    .search-form button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      background: #ffffff;
+      color: #fff;
+      cursor: pointer;
+    }
+    .hero {
+      background: #f4f4f4;
+      padding: 20px 0;
+    }
+    .hero-content {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .hero-img {
+      max-width: 50%;
+      height: auto;
+
+      border-radius: 10px;
+    }
+    .hero-text h2 {
+      margin-top: 0;
+    }
+    .news-feed {
+      padding: 40px 0;
+    }
+    .news-feed h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .news-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .news-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .news-item h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .news-item p {
+      color: #555;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    .categories {
+      background: #f9f9f9;
+      padding: 30px 0;
+    }
+    .category-list {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .category {
+      background: #000000;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .category:hover {
+      background: #28a801;
+    }
+    .subscribe {
+      background: #222;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+    .subscribe-form input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      width: 250px;
+      margin-right: 10px;
+    }
+    .subscribe-form button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      background: #000000;
+      color: #fff;
+      cursor: pointer;
+    }
+    .contacts {
+      padding: 30px 0;
+      background: #f4f4f4;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+    </style>
+  </head>
 <body>
 
   <!-- 🧭 ШАПКА -->
@@ -34,7 +193,7 @@
   <!-- 🖼️ ГОЛОВНА НОВИНА -->
   <section class="hero">
     <div class="container hero-content">
-      <img src="https://example.com/tech-hero-image.jpg" alt="Головна новина технологій" class="hero-img" />
+      <img src="https://ntz.com.ua/wp-content/uploads/2025/04/iphone_17_pro_max_design-1024x643.webp" alt="Головна новина технологій" class="hero-img" />
       <div class="hero-text">
         <h2>Нові технології змінюють світ</h2>
         <p>Сьогодні ми розглянемо останні досягнення в сфері технологій, які можуть змінити наше життя.</p>
@@ -50,28 +209,28 @@
       <div class="news-grid">
 
         <article class="news-item">
-          <img src="https://example.com/tech-news1.jpg" alt="Технологія 1" />
+          <img src="https://www.vodafone.ua/shop/media/wysiwyg/novosti/0.jpg" alt="Технологія 1" />
           <h3>Випуск нової моделі смартфона</h3>
           <p>Компанія XYZ представила свою нову модель смартфона з революційними функціями.</p>
           <a href="#" class="read-more">Читати далі</a>
         </article>
 
         <article class="news-item">
-          <img src="https://example.com/tech-news2.jpg" alt="Технологія 2" />
+          <img src="https://ai.if.ua/wp-content/uploads/2024/12/951199-870x400.jpg" alt="Технологія 2" />
           <h3>Розвиток штучного інтелекту</h3>
           <p>Експерти обговорюють майбутнє штучного інтелекту та його вплив на суспільство.</p>
           <a href="#" class="read-more">Читати далі</a>
         </article>
 
         <article class="news-item">
-          <img src="https://example.com/tech-news3.jpg" alt="Технологія 3" />
+          <img src="https://trueua.info/upload/store/News/News8068/c85d06.jpg" alt="Технологія 3" />
           <h3>Технології в медицині</h3>
           <p>Нові технології допомагають лікарям у діагностиці та лікуванні пацієнтів.</p>
           <a href="#" class="read-more">Читати далі</a>
         </article>
 
         <article class="news-item">
-          <img src="https://example.com/tech-news4.jpg" alt="Технологія 4" />
+          <img src="https://cdn.shopify.com/s/files/1/0299/9215/7283/files/Cybersecurity_certiprof.webp?v=1733832542" alt="Технологія 4" />
           <h3>Кібербезпека: нові виклики</h3>
           <p>Фахівці обговорюють нові загрози в сфері кібербезпеки та способи їх подолання.</p>
           <a href="#" class="read-more">Читати далі</a>

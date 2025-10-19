@@ -1,10 +1,134 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Info — Спорт</title>
-  <link rel="stylesheet" href="Daily Info/daily-info-website/style.css" />
+    <meta charset="UTF-8">
+    <title>Daily Info</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .logo {
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a.active {
+      text-decoration: underline;
+    }
+    .news-feed {
+      padding: 40px 0;
+    }
+    .news-feed h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .news-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .news-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .news-item h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .news-item p {
+      color: #555;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: #e0e0e0;
+      padding: 30px 0;
+      margin-bottom: 40px;
+    }
+    .hero-content {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .hero-img {
+      max-width: 50%;
+      border-radius: 10px;
+    }
+    .hero-text h2 {
+      margin-top: 0;
+    }
+    .categories {
+      background: #fff;
+      padding: 30px 0;
+      margin-bottom: 40px;
+    }
+    .category-list {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .category {
+      background: #0066cc;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .category:hover {
+      background: #004999;
+    }
+    .contacts {
+      background: #f0f0f0;
+      padding: 30px 0;
+      margin-bottom: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,7 +158,7 @@
   <!-- 🏅 ГОЛОВНА НОВИНА СПОРТУ -->
   <section class="hero">
     <div class="container hero-content">
-      <img src="https://example.com/sport-hero-image.jpg" alt="Головна новина спорту" class="hero-img" />
+      <img src="https://glavcom.ua/img/article/9627/49_pb-v1697481396.jpg" alt="Головна новина спорту" class="hero-img" />
       <div class="hero-text">
         <h2>Чемпіонат світу з футболу: Україна у фіналі!</h2>
         <p>Національна збірна України здобула перемогу у півфіналі та вийшла у фінал чемпіонату світу з футболу.</p>
@@ -50,28 +174,28 @@
       <div class="news-grid">
 
         <article class="news-item">
-          <img src="https://example.com/sport-news-1.jpg" alt="Спортивна новина 1" />
+          <img src="https://glavcom.ua/img/article/10146/5_main-v1723243611.jpg" alt="Спортивна новина 1" />
           <h3>Українські спортсмени здобули медалі на Олімпіаді</h3>
           <p>Наші атлети показали чудові результати на Олімпійських іграх, завоювавши кілька медалей.</p>
           <a href="#" class="read-more">Читати далі</a>
         </article>
 
         <article class="news-item">
-          <img src="https://example.com/sport-news-2.jpg" alt="Спортивна новина 2" />
+          <img src="https://fcdynamo.com/assets/front/img/logo_dk_2025.png" alt="Спортивна новина 2" />
           <h3>Футбольний клуб виграв чемпіонат</h3>
           <p>Лідер українського футболу здобув перемогу у чемпіонаті, ставши чемпіоном країни.</p>
           <a href="#" class="read-more">Читати далі</a>
         </article>
 
         <article class="news-item">
-          <img src="https://example.com/sport-news-3.jpg" alt="Спортивна новина 3" />
+          <img src="https://unn.ua/img/2024/07/28/1722170902-4318-large.webp" alt="Спортивна новина 3" />
           <h3>Тенісистка досягла нового рекорду</h3>
           <p>Відома українська тенісистка встановила новий рекорд у світовому рейтингу.</p>
           <a href="#" class="read-more">Читати далі</a>
         </article>
 
         <article class="news-item">
-          <img src="https://example.com/sport-news-4.jpg" alt="Спортивна новина 4" />
+          <img src="https://cdn4.suspilne.media/images/resize/720x1.78/db4f8bca6fe18715.jpg" alt="Спортивна новина 4" />
           <h3>Змагання з легкої атлетики</h3>
           <p>В Україні пройшли змагання з легкої атлетики, де наші спортсмени показали відмінні результати.</p>
           <a href="#" class="read-more">Читати далі</a>
