@@ -10,6 +10,7 @@ body {
   line-height: 1.6;
   color: #222;
   background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 
 /* 🧭 Шапка */
 header {
-  background: #c40000; /* червоний */
+  background: #c40000;
   color: white;
   padding: 15px 0;
 }
@@ -30,6 +31,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .logo {
@@ -58,31 +60,15 @@ nav a:hover {
 .search-form {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  gap: 5px;
 }
 
 .search-form input[type="search"] {
   padding: 8px 12px;
   font-size: 16px;
-  border: 1px solid #c40000;
-  border-radius: 4px 0 0 4px;
+  border: 1px solid #9b0000;
+  border-radius: 4px;
   outline: none;
-}
-
-.search-form button {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #000000;
-  border-left: none;
-  background-color: #ffffff;
-  color: white;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.search-form button:hover {
-  background-color: #9b0000;
 }
 
 .visually-hidden {
@@ -118,16 +104,6 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-.read-more {
-  color: #c40000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
 /* 🗞️ Стрічка новин */
 .news-feed {
   padding: 40px 0;
@@ -139,7 +115,6 @@ nav a:hover {
   gap: 20px;
 }
 
-/* Вирівнювання всіх карток новин */
 .news-item {
   display: flex;
   flex-direction: column;
@@ -150,6 +125,12 @@ nav a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   height: 100%;
   border: 1px solid #eee;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .news-item img {
@@ -169,22 +150,6 @@ nav a:hover {
   flex-grow: 1;
 }
 
-.news-item .read-more {
-  display: block;
-  text-align: center;
-  background: #c40000;
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  border-top: 1px solid #9b0000;
-  transition: 0.3s;
-}
-
-.news-item .read-more:hover {
-  background: #9b0000;
-}
-
 /* 📑 Категорії */
 .categories {
   background: #f9f9f9;
@@ -199,20 +164,6 @@ nav a:hover {
   gap: 15px;
 }
 
-.category {
-  background: #c40000;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.category:hover {
-  background: #9b0000;
-}
-
 /* 📨 Підписка */
 .subscribe {
   text-align: center;
@@ -221,6 +172,7 @@ nav a:hover {
 
 .subscribe h2 {
   color: #c40000;
+  margin-bottom: 10px;
 }
 
 .subscribe-form {
@@ -228,30 +180,16 @@ nav a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .subscribe-form input {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #c40000;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px;
   width: 250px;
   outline: none;
-}
-
-.subscribe-form button {
-  padding: 10px 20px;
-  border: none;
-  background: #c40000;
-  font-size: 16px;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s;
-}
-
-.subscribe-form button:hover {
-  background: #9b0000;
 }
 
 /* 📞 Контакти */
@@ -262,6 +200,7 @@ nav a:hover {
 
 .contacts h2 {
   color: #c40000;
+  margin-bottom: 15px;
 }
 
 /* 📢 Футер */
@@ -271,6 +210,139 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 30px;
+}
+
+/* 🎨 ГАРНІ КНОПКИ */
+.btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #c40000, #9b0000);
+  color: #fff;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(.2, .9, .2, 1);
+  box-shadow: 0 4px 12px rgba(196, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(196, 0, 0, 0.4);
+  background: linear-gradient(135deg, #9b0000, #7a0000);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(196, 0, 0, 0.3);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Кнопки категорій */
+.category {
+  background: #f0f0f0;
+  color: #333;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+
+.category:hover {
+  background: #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category.active {
+  background: linear-gradient(135deg, #c40000, #9b0000);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(196, 0, 0, 0.25);
+}
+
+/* Кнопка в формі пошуку */
+.search-form .btn {
+  padding: 8px 12px;
+}
+
+/* Кнопка у формі підписки */
+.subscribe-form .btn {
+  padding: 12px 20px;
+  min-width: 120px;
+}
+
+/* ...existing code... */
+
+/* 🌙 ТЕМНА ТЕМА — доповнення */
+body[data-theme="dark"] {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] header {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] nav a {
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .news-item {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body[data-theme="dark"] .news-item h3 {
+  color: #ff6b6b;
+}
+
+body[data-theme="dark"] .categories {
+  background: #252525;
+}
+
+body[data-theme="dark"] footer {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .category {
+  background: #3a3a3a;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body[data-theme="dark"] .subscribe {
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .subscribe h2 {
+  color: #ff6b6b;
+}
+
+body[data-theme="dark"] .subscribe-form input {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body[data-theme="dark"] .contacts h2 {
+  color: #ff6b6b;
+}
+
+body[data-theme="dark"] .search-form input[type="search"] {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body[data-theme="dark"] .hero-text h2 {
+  color: #ff6b6b;
 }
 
 /* 📱 Адаптив */
@@ -288,7 +360,6 @@ footer {
   .search-form {
     width: 100%;
     justify-content: center;
-    margin-top: 10px;
   }
 
   .subscribe-form {
@@ -296,9 +367,12 @@ footer {
   }
 
   .subscribe-form input,
-  .subscribe-form button {
+  .subscribe-form .btn {
     width: 100%;
-    border-radius: 4px;
-    margin: 5px 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
   }
 }
